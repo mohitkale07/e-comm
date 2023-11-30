@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Comm</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/a32c33aad4.js" crossorigin="anonymous"></script>
+    <!-- Styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- navbar -->
+
+    <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars" onclick="openNav()"></i>
+            </span>
+            <img src="./images/Black White Simple Clothing Shop Business Logo.svg" alt="">
+            <div class="cart-btn" >
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus" ></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Side Nav Bar -->
+
+<div id="sideNav" class="sidenav">
+  <span  class="close-btn" onclick="closeNav()">&times;</span>
+  
+  <!-- Navigation Links -->
+  <a href="#">Home</a>
+  <a href="#">Shop</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+  
+  <!-- User Profile/Settings -->
+  <a href="#">Profile</a>
+  <a href="#">Settings</a>
+  
+  <!-- Search Bar -->
+  <input type="text" placeholder="Search">
+  
+  <!-- Utility Links -->
+  <a href="#">Help</a>
+  <a href="#">FAQ</a>
+  <a href="#">Support</a>
+  <a href="#">Terms of Service</a>
+  <a href="#">Privacy Policy</a>
+  
+  <!-- Social Media Links -->
+  <div class="social-links">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+  
+  <!-- Call to Action -->
+  <a href="#" class="cta-btn">Buy Now</a>
+  
+  <!-- Additional Information -->
+  <div class="additional-info">
+    <p>Contact us: contact@inkvibethreads.com</p>
+    <p>&copy; 2023 InkVibe Threads</p>
+  </div>
+</div>
+
+<!-- hero section  -->
+<section class="hero">
+  <div class="banner">
+    <div class="banner-title">
+        <h1>Welcome to InkVibe Threads</h1>
+    </div>
+    <p>Discover our collection of unique, stylish t-shirts!</p>
+    <button class="banner-btn" >Shop Now</button>
+  </div>
+</section>
+
+<!-- Product -->
+<section class="products">
+  <div class="section-title">
+    <h2>Our Products</h2>
+  </div>
+  <div class="products-center">
+    <!-- products  -->
+    <article class="product">
+      <div class="img-container">
+      <img src="./images/product-1.jpeg" alt="Product 1" class="product-img">
+      <button class="bag-btn" data-id="1">
+          <i class="fas fa-shopping-cart">add to cart</i>
+      </button>
+     </div>
+      <h3>Graphic Tee</h3>
+      <h4>599rs</h4>
+    </article> 
+    
+  </div>
+</section>
+<!-- end of product  -->
+
+<!-- Testimonial  -->
+ <div class="wrapper">
+  <!-- Testimonial 1  -->
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Kristina James</div>
+          <div class="job">Designer | Developer</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./images/testimonial-1.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial 2 -->
+    <div class="box">
+      <i class="fas fa-quote-left quote"></i>
+      <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Steven Chris</div>
+          <div class="job">YouTuber | Blogger</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./images/testimonial-2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial 3  -->
+    <div class="box">
+      <i class="fas fa-quote-left  quote"></i>
+      <p>Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos repellendus repudiandae deleniti ideas fuga molestiae, alias.</p>
+      <div class="content">
+        <div class="info">
+          <div class="name">Jason Fimmel</div>
+          <div class="job">Freelancer | Advertiser</div>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./images/testimonial-3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of testimonial  -->
+  <!-- cart -->
+  <div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart">
+        <i class="fas fa-window-close"></i>
+      </span>
+      <h2>your cart</h2>
+      <div class="cart-content">
+        <!-- <div class="cart-item">
+          <img src="./images/product-1.jpeg" alt="">
+          <div>
+            <h4>Graphic Tee</h4>
+            <h5>599rs</h5>
+            <div class="remove-item">remove</div>
+          </div>
+          <div>
+              <i class="fas fa-chevron-up"></i>
+              <p class="item-amount">1</p>
+              <i class="fas fa-chevron-down"></i>
+          </div> -->
+      </div>
+      <div class="cart-footer">
+        <h3>Your Total: Rs<span class="cart-total">0</span></h3>
+        <div class="clear-cart banner-btn">clear cart</div>
+      </div>
+</div>
+</div>
+  <!-- Footer  -->
+     <footer class="site-footer">
+  <div class="footer-links">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </div>
+  <div class="mail-subscribe">
+    <h4>Subscribe to our newsletter</h4>
+    <form class="subscribe-form">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2023 InkVibe Threads. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- contentful js link to connect to contentful models -->
+<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+
+</body>
+<script src="app.js"></script>
+</html>
